@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Tadesse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="pic/logo.png" alt="Tadesse Logo" />
+      <h1>Tade</h1>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul id="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Script for Toggle Menu -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navList = document.getElementById("nav-list");
+    menuToggle.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  </script>
+
+  <!-- About Section -->
+   <h2 class="heading">About Me</h2>
+  <section id="about">
+    
+    <p>
+      I’m Tadesse, an Information Systems student at the University of Gondar
+      with a strong passion for web development. I enjoy creating simple,
+      user-friendly, and functional websites that solve real-world problems.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-icons">
+      <a
+        href="https://www.instagram.com/ta_de_8"
+        class="icon instagram"
+        target="_blank"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://t.me/Bekalu86" class="icon telegram" target="_blank">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
+
+    <p class="phone">📞 <a href="tel:+251934334523">+251 934 334 523</a></p>
+    <p class="contact-item">
+      📧
+      <a href="mailto:tademeseret821@gmail.com">tademeseret821@gmail.com</a>
+    </p>
+  </section>
+</body>
+</html>

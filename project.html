@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="pic/logo.png" alt="Tadesse Logo" />
+      <h1>Tade</h1>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul id="nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html" class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Script for Toggle Menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Vital Registration System</h3>
+      <p>A web-based system designed for managing birth, marriage,divorce and death registrations in Gondar Kebele 18.</p>
+      <a href="https://1drv.ms/u/c/637383915bdc0f51/EXJGzF1fRvxOtWjbGFyBcJoBvhE4M3-cSlSXizegaxA-eA?e=f0a1PH"></a>
+    </div>
+  </section>
+</body>
+</html>
+

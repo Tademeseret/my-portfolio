@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tadesse - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="pic/Tm.png" alt="Tadesse Logo" />
+      <h1>Tade</h1>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul id="nav-list">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Script for Toggle Menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
+  <!-- Home Section -->
+  <section id="home">
+    <img src="pic/p.png"Tadesse Photo" class="profile" />
+    <div class="bio">
+      <h2>Hi, I'm Tadesse Meseret</h2>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <p>&copy; 2025 Tadesse. All rights reserved.</p>
+    </section>
+  
+</body>
+</html>
