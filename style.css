@@ -6,9 +6,6 @@
   box-sizing: border-box;
   }
 
-html {
-scroll-behavior: smooth;
-}
 
 body {
 font-family: Arial, sans-serif;
@@ -21,26 +18,26 @@ line-height: 1.6;
 header {
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items:center;
 padding: 25px 10px;
-background-color: white;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-position: sticky;
-top: 0;
-z-index: 1000;
+background-color: rgb(252, 249, 249);
+position:static;
 }
 
 /* -- Logo -- */
 .logo {
 display: flex;
-align-items: center;
+align-items:center;
 gap: 10px;
 }
 
 .logo img {
-width: 70px;
-height: 70px;
-border-radius: 50%;
+width: 60px;
+height: 55px;
+border-radius: 65%;
+border-style:solid;
+border-color: #4f5372;
+
 }
 
 .logo h1 {
@@ -78,7 +75,7 @@ color: #ff0000;
 }
 
 nav ul li a.active{
-  color: #14e352;
+  color:blue;
 }
 
 /* --- Mobile Menu --- */
@@ -87,8 +84,8 @@ display: none;
 flex-direction:column;
 cursor: pointer;
 position: absolute;
-top: 25px;
-right: 25px;
+top: 10px;
+right: 10px;
 }
 
 .menu-toggle span {
@@ -119,8 +116,10 @@ display: flex;
 }
 
 nav ul li {
-padding: 10px 0;
-border-bottom: 1px solid #eee;
+padding: 2px 1px 2px 1px;
+
+
+
 }
 
 nav ul li a {
@@ -154,32 +153,39 @@ margin-bottom: 20px;
 }
 
 .bio h2:hover {
-color: #007bff;
+color: red;
 transform: scale(1.1);
 cursor: pointer;
 }
 
 /* --About Section */
 #about {
-text-align: center;
-padding: 0px 20px;
+text-align:justify;
 font-family: 'Times New Roman', Times, serif;
 color: #3c3c57;
-
+ background-color: #f9f9f9;       
+  border: 2px solid #d3d9df;       
+  border-radius: 30px;             
+  padding: 20px;                  
+  width: 260px; 
+  height: 230px; ;
+  margin: 20px auto;               
+  box-shadow: 0 4px 10px rgba(122, 115, 115, 0.1); 
 
 }
 .heading {
   color: #2a70cd;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 1%;
+
 }
 
 
 /* --Project Section-- */
 #projects {
 text-align: center;
-padding: 200px 30px;
+padding: 60px 30px;
 background-color: white;
 }
 
@@ -187,28 +193,35 @@ background-color: white;
 color:#2a70cd;
 font-size: 26px;
 margin-bottom: 20px;
+font-style: italic;
+font-family:sans-serif
 }
 
 .project {
 background-color: white;
-max-width: 700px;
+max-width: 500px;
 margin: 20px auto;
-padding: 15px;
-border-left: 5px solid #3b4bb6;
-border-radius: 5px;
-text-align: left;
-margin-bottom: 25px;
-box-shadow: 0 3px 6px rgba(15, 236, 48, 0.1);
+padding: 10px;
+border: 1px solid #3b4bb6;
+border-radius: 20px;
+text-align: center;
+text-align: justify;
+margin-bottom: 30px;
+border-left-width: 3px;
 }
 
 .project h3 {
-color: #061c34;
+color: #33ae7b;
 font-style: italic;
+text-align: center;
 }
 
 .project p {
 color: #155b93;
-margin-top: 8px;
+margin-top: 1px;
+font-family: 'Times New Roman', Times, serif;
+font-size:110%;
+
 }
 
 /* --- Buttons --- */
@@ -301,7 +314,7 @@ text-decoration: underline;
 /* --Footer--*/
 #footer {
 text-align: center;
-padding: 20px;
+
 color: #333;
 background-color: #f9f9f9;
 font-size: 14px;
