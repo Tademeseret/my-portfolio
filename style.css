@@ -93,7 +93,7 @@ transition: 0.3s;
 }
 
 /* --- Responsive Menu --- */
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 nav ul {
 flex-direction:row;
 width: 100%;
