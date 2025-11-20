@@ -8,7 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
+
 <body>
+  <script>
+window.addEventListener("load", () => {
+  document.querySelectorAll(".zoom-text").forEach(el => {
+    el.classList.add("zoom-in");
+  });
+});
+</script>
+
+
   <!-- Header Section -->
   <header>
     <div class="logo">
@@ -45,10 +55,41 @@
   <!-- Home Section -->
   <section id="home">
     <img src="pic/p.png"Tadesse Photo" class="profile" />
-    <div class="bio">
-      <h2>Hi, I'm Tadesse Meseret</h2>
-    </div>
+       <div class="bio">
+         <h2 class="zoom-text">Hi, I'm Tadesse Meseret</h2>
+         <h3 class="zoom-text"> Frontend Developer</h3>
+      
+       </div>
+    
   </section>
+  
+
+  <div class="contact-icons">
+      <a
+        href="https://www.instagram.com/ta_de_8"
+        class="icon instagram"
+        target="_blank"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://github.com/Tademeseret"
+        class="icon github"
+        target="_blank"
+        
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a
+        href="https://t.me/Bekalu86"
+        class="icon telegram"
+        target="_blank"
+      >
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
 
   <!-- Footer -->
   <section id="footer">
