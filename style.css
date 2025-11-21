@@ -62,6 +62,7 @@ nav ul li a {
   transition: color 0.3s;
   
   
+  
 }
 
 nav ul li a:hover {
@@ -79,12 +80,13 @@ nav ul li a.active {
   flex-direction: column;
   cursor: pointer;
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 10px;
+  right: 5px;
+  gap: 1px;
 }
 
 .menu-toggle span {
-  height: 2px;
+  height: 3px;
   width: 15px;
   background: #cbcdcf;
   margin: 1px 0px;
@@ -102,8 +104,8 @@ nav ul li a.active {
 }
 
 img.profile {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border: 2px solid #ffffff;
   border-radius: 10%;
@@ -154,10 +156,11 @@ img.profile {
 }
 
 .border {
-  width: 610px;
+  width: 600px;
   max-width: 95%;
   height: auto;
-  margin: 25px auto;
+  margin: 10px auto;
+
 }
 
 .heading {
@@ -177,12 +180,18 @@ img.profile {
 /* --Contact Section -- */
 #contact {
   text-align: center;
-  padding: 25px 15px;
+  padding: 10px 5px;
+ border: 4px double rgba(143, 158, 223, 0.692);
+ border-radius: 60px;
+ 
+ 
+
+  
 }
 
 #contact h2 {
   font-size: 2rem;
-  color: rgb(199, 39, 39);
+  color: rgb(39, 199, 63);
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-decoration: underline;
 }
@@ -191,7 +200,7 @@ img.profile {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 }
 
 .contact-icons .icon {
@@ -211,11 +220,13 @@ img.profile {
   color: #05cb47;
   transform: scale(1.15);
 }
-
+ 
 .phone a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  margin-bottom: 20px;
+  
 }
 
 .phone a:hover {
@@ -248,42 +259,42 @@ img.profile {
   font-size: 2rem;
 }
 
-.vital,
-.hotel {
+.project1,
+.project2 {
   width: 550px;
   max-width: 95%;
   height: auto;
   margin: 10px auto;
   padding: 20px;
-  border: 2px solid rgba(4, 164, 143, 0.692);
+  border: 2px solid rgba(15, 203, 178, 0.692);
+  border-left-color: rgb(15, 198, 125);
   border-radius: 25px;
   text-align: center;
   margin-bottom: 20px;
   border-left-width: 10px;
-  border-right-width: 5px;
   border-bottom-left-radius: 0%;
   border-bottom-style: double;
   border-bottom-width: 7px;
   background-color: rgb(212, 219, 222);
 }
 
-.hotel {
+.project1 {
   background-color: rgb(209, 217, 222);
   height: auto;
 }
 
-.vital h3,
-.hotel h3 {
-  color: rgb(45, 43, 43);
+.project1 h3,
+.project2 h3 {
+  color: rgb(44, 45, 43);
   font-style: italic;
   text-align: center;
   font-size: 20px;
   text-decoration: underline;
 }
 
-.vital p,
-.hotel p {
-  color: rgb(10, 100, 203);
+.project1,
+.project2 p {
+  color: rgb(5, 104, 216);
   margin-top: 5px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.1rem;
@@ -304,8 +315,10 @@ img.profile {
 /* --Footer -- */
 #footer {
   text-align: center;
-  color: white;
-  font-size: 14px;
+  color: rgb(247, 219, 219);
+  font-size: 13px;
+margin:20px 5px 0px 5px;
+
 }
 
 /* RESPONSIVE MEDIA QUERIES  */
@@ -314,8 +327,8 @@ img.profile {
 @media (max-width: 1024px) {
   .bio,
   .border,
-  .vital,
-  .hotel {
+  .project1,
+  .project2 {
     width: 80%;
     padding: 15px;
     height: auto;
@@ -346,24 +359,25 @@ img.profile {
     flex-direction: column;
     width: 100%;
     display: none;
+    right: 5px;
   }
 
   nav ul.active {
     display: flex;
     flex-direction:column;
     justify-content: space-around;
-    background-color: #0f051d;
+    
     
   }
 
   .menu-toggle {
-    display: flex;
+    display:flex;
   }
 
   .bio,
   .border,
-  .vital,
-  .hotel {
+  .project1,
+  .project2 {
     width: 95%;
     font-size: 90%;
     padding: 10px;
@@ -394,8 +408,8 @@ img.profile {
 
   .bio,
   .border,
-  .vital,
-  .hotel {
+  .project1,
+  .project2 {
     width: 100%;
     padding: 8px;
   }
@@ -405,3 +419,83 @@ img.profile {
   }
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction:column-reverse; 
+    
+    padding: 5px;
+    position: absolute;
+    right: 5px;      
+    top: 20px;
+    width: 80px;
+    
+  }
+
+  nav ul.active {
+    display: flex; 
+  }
+
+  .menu-toggle {
+    display: flex; 
+  }
+}
+/* Responsive Design (Mobile)*/
+@media (max-width: 768px) {
+
+  /* Header layout */
+  header {
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0px;
+    
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 60px;
+    padding: 0px;
+
+  }
+
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Smaller toggle size */
+  .menu-toggle span {
+    width: 20px;
+    height: 2.5px;
+    margin: 2px 0;
+  }
+
+  /* Vertical menu links */
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  /* Home section responsive */
+  #home {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #home img {
+    width: 180px;
+  }
+}
